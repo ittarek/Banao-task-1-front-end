@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>News-app-banao</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- --------------------Navigation bar------------------ -->
+    <div>
+        <!-- Desktop Navigation Bar -->
+        <div class="">
+            <nav class="navbar navbar-expand-lg navbar-light  py-3 ml-5 mr-5" id="desktopNav">
+
+
+                <a class="navbar-brand fs-4 fw-4" href="#">ATG.WORLD</a>
+
+                <form class="form-inline my-2 my-lg-0 ml-auto d-none d-lg-flex  relative">
+                    <div class="position-relative flex items-center">
+                        <i class="fas fa-search position-absolute  pl-3 py-2  text-muted"></i>
+                        <input class="form-control mr-sm-2  pl-5 bg-light rounded-5" type="search"
+                            placeholder="Search for your favorite groups in ATG" aria-label="Search">
+                    </div>
+                </form>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Create Account. <span class="text-primary">It's Free!</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <!-- Add your dropdown options here -->
+                            <a class="dropdown-item" href="#">Login</a>
+                            <a class="dropdown-item" id="openModalButton" href="#">Create Account </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Setting</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Mobile Navigation Bar -->
+        <nav class="navbar navbar-light bg-light d-lg-none ml-auto" id="mobileNav">
+            <ul class="navbar-nav d-flex ml-auto ">
+                <li class="nav-item ">
+                    <button type="button" class="btn btn-light"><i class="fas fa-square"></i></button>
+                </li>
+                <li class="nav-item ">
+                    <button type="button" class="btn btn-light"><i class="fas fa-circle"></i></button>
+                </li>
+                <li class="nav-item" id="backButton">
+                    <button type="button" class="btn btn-light"><i class="fas fa-play"></i> </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- --------------------------------banner section------------- -->
+
+
+    <div class="section-container">
+        <img class="responsive-image img-fluid" src="https://i.ibb.co/Mk1JPrR/890ddcd1c2ce5ec-1903x517.png"
+            alt="Your Image">
+        <div class="text-overlay">
+            <h3>Computer Engineering</h3>
+            <p>142,765 Computer Engineers follow this</p>
+        </div>
+    </div>
+
+
+    <!-- --------------blog post section--------------------- -->
+
+    <div class="container">
+        <div class=" row mt-3 ">
+
+            <div class="col-9 ">
+                <div class="container d-flex align-items-center pt-3">
+                    <p class="mr-3">
+                        <a href="#">All post(38)</a>
+                    </p>
+                    <p class="mr-3 d-none d-md-inline">
+                        <a href="#">Article</a>
+                    </p>
+                    <p class="mr-3 d-none d-md-inline">
+                        <a href="#">Event</a>
+                    </p>
+                    <p class="mr-3 d-none d-md-inline">
+                        <a href="#">Education</a>
+                    </p>
+                    <p class="mr-3 d-none d-md-inline">
+                        <a href="#">Job</a>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-3 d-none d-md-block ">
+                <div class="container d-flex justify-content-between align-items-center p-2">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle mr-2" type="button" id="navbarDropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Write Now
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Blog Post</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Create post</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" type="button">
+                        Join Group
+                    </button>
+                </div>
+            </div>
+            <div class="dropdown d-md-none">
+
+                <button class="btn btn-light dropdown-toggle" type="button" id="filterDropdown" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Filter : All
+                </button>
+                <div class="dropdown-menu" aria-labelledby="filterDropdown">
+                    <a class="dropdown-item" href="#">Article</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Event</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Education</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Job</a>
+
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="border-bottom"></div>
+    </div>
+
+    <!-- ------------------------------post card-1------------------- -->
+
+    <div class="container ">
+        <div class="row mt-4">
+            <div class="col-12 col-md-9">
+                <div>
+                    <div class="  mb-5">
+                        <div class="card-border">
+                            <img class="responsive-image img-fluid w-full"
+                                src="https://i.ibb.co/Mk1JPrR/890ddcd1c2ce5ec-1903x517.png" alt="Your Image">
+                            <div class="mx-4">
+                                <h2 class="title">✍️ Article</h2>
+                                <h2 class="card-text"> What if famous brands had regular fonts? Meet RegulaBrands!</h2>
+                                <p class="muted">I’ve worked in UX for the better part of a decade. From now on, I plan
+                                    to
+                                    rei…
+                                </p>
+                            </div>
+                            <div class="mx-4">
+
+
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid custom-image mr-2"
+                                            src="/image/2.jpg"
+                                            alt="Your Image">
+                                        <p class="card-text"><strong>Sarthak Kamra</strong> </p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center py-2 ">
+                                        <p class="cards-text">
+                                            <i class="fas fa-eye mr-2"></i>
+                                            1.4k Views
+                                        </p>
+                                        <button class="btn bg-light">
+                                            <i class="fas fa-share-alt mr-2"></i>Share
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="  mb-5">
+                        <div class="card-border">
+                            <img class="responsive-image img-fluid w-full"
+                                src="https://i.ibb.co/Mk1JPrR/890ddcd1c2ce5ec-1903x517.png" alt="Your Image">
+                            <div class="mx-4">
+                                <h2 class="title">Education</h2>
+                                <h2 class="card-text"> Tax Benefits for Investment under National Pension Scheme
+                                    launched by Government</h2>
+                                <p class="muted">I’ve worked in UX for the better part of a decade. From now on, I plan
+                                    to
+                                    rei…
+                                </p>
+                            </div>
+                            <div class="mx-4">
+
+
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid custom-image mr-2"
+                                            src="https://i.ibb.co/Mk1JPrR/890ddcd1c2ce5ec-1903x517.png"
+                                            alt="Your Image">
+                                        <p class="card-text"><strong>Sarah West</strong> </p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center py-2 ">
+                                        <p class="cards-text">
+                                            <i class="fas fa-eye mr-2"></i>
+                                            1.4k Views
+                                        </p>
+                                        <button class="btn bg-light">
+                                            <i class="fas fa-share-alt mr-2"></i>Share
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="  mb-5">
+                        <div class="card-border">
+                            <img class="responsive-image img-fluid w-full"
+                                src="https://i.ibb.co/Mk1JPrR/890ddcd1c2ce5ec-1903x517.png" alt="Your Image">
+                            <h2 class="title mx-4">Meet Up</h2>
+                            <div class="mx-4">
+                                <div class="d-flex justify-content-between">
+
+                                    <h2 class="card-text"> Finance & Investment Elite Social Mixer @Lujiazui</h2>
+
+                                    <div class="dropdown">
+
+                                        <button class="btn btn-light " type="button" id="" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <strong> ... </strong>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="filterDropdown">
+                                            <a class="dropdown-item" href="#">Edit</a>
+
+                                            <a class="dropdown-item" href="#">Report</a>
+
+                                            <a class="dropdown-item" href="#">Option 3</a>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="">
+                                                <i class="fas fa-calendar"></i>
+                                                Fri, 12 Oct, 2018
+                                            </p>
+                                            <p class="">
+                                                <span class=""><i class="fas fa-map-marker "></i></span>
+                                                Ahmedabad, India
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <button
+                                            class=" btn-outline btn-block py-2 rounded text-danger bg-white border-light">View
+                                            Website</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="mx-4">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid custom-image mr-2"
+                                            src="https://i.ibb.co/Mk1JPrR/890ddcd1c2ce5ec-1903x517.png"
+                                            alt="Your Image">
+                                        <p class="card-text"><strong>Sarthak Kamra</strong> </p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center py-2 ">
+                                        <p class="cards-text">
+                                            <i class="fas fa-eye mr-2"></i>
+                                            1.4k Views
+                                        </p>
+                                        <button class="btn bg-light">
+                                            <i class="fas fa-share-alt mr-2"></i>Share
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="  mb-5">
+                        <div class="card-border">
+                            <img class="responsive-image img-fluid w-full"
+                                src="https://i.ibb.co/Mk1JPrR/890ddcd1c2ce5ec-1903x517.png" alt="Your Image">
+                            <h2 class="title mx-4">Job</h2>
+                            <div class="mx-4">
+                                <div class="d-flex justify-content-between">
+
+                                    <h2 class="card-text"> Software Developer</h2>
+
+                                    <div class="dropdown">
+
+                                        <button class="btn btn-light " type="button" id="" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <strong> ... </strong>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="filterDropdown">
+                                            <a class="dropdown-item" href="#">Edit</a>
+
+                                            <a class="dropdown-item" href="#">Report</a>
+
+                                            <a class="dropdown-item" href="#">Option 3</a>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="">
+                                                <i class="fas fa-calendar"></i>
+                                                Innovaccer Analytics Private Ltd.
+                                            </p>
+                                            <p class="">
+                                                <span class=""><i class="fas fa-map-marker "></i></span>
+                                                Ahmedabad, India
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <button
+                                            class=" btn-outline btn-block py-2 rounded text-success bg-light border-light">Apply
+                                            to timesjob</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="mx-4">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid custom-image mr-2"
+                                            src="https://i.ibb.co/Mk1JPrR/890ddcd1c2ce5ec-1903x517.png"
+                                            alt="Your Image">
+                                        <p class="card-text"><strong>Sarthak Kamra</strong> </p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center py-2 ">
+                                        <p class="cards-text">
+                                            <i class="fas fa-eye mr-2"></i>
+                                            1.4k Views
+                                        </p>
+                                        <button class="btn bg-light">
+                                            <i class="fas fa-share-alt mr-2"></i>Share
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-3">
+                <div class="input-container d-none d-md-block">
+                    <span class=""><i class="fas fa-map-marker "></i></span>
+                    <input class="pl-4" type="text" placeholder="Noida, India">
+                    <span class="icon edit-icon">&#9998;</span>
+
+                    <div>
+                        <p class="mt-3 pl-2">
+                            <span class="border rounded-circle px-2"><i class="fas fa-exclamation "></i></span>
+                            Your location will help us serve better and extend a personalised experience.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- ------------------------------sign up form---------------- -->
+    <!-- <button class="dropdown-item" id="openModalButton">Create Account</button> -->
+
+    <!-- modal content here -->
+    <div class="container">
+        <div id="myModal" class="relative">
+            <button class="d-flex ml-auto absolute top-0" onclick="closeModal()">Close</button>
+            <p class="d-none d-md-block">Let's learn, share & inspire each other with our passion for computer
+                engineering. Sign up now 🤘🏼</p>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="modal-body">
+                        <h2 class="mb-2">Create Account</h2>
+                        <form id="signUpForm">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="First Name" required>
+                                <input type="text" class="form-control" placeholder="Last Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="emailSignUp" placeholder="Enter your email"
+                                    required>
+                                <input type="password" class="form-control" id="passwordSignUp"
+                                    placeholder="Enter your password" required>
+                                <input type="password" class="form-control" id="confirmPassword"
+                                    placeholder="Confirm your password" required>
+                            </div>
+                            <button type="submit" class="btn btn-block btn-primary mb-3">Create Account</button>
+                        </form>
+                        <button type="button" class="btn btn-block btn-outline-primary d-inline-block">Sign up with
+                            Facebook</button>
+                        <button type="button" class="btn btn-block btn-outline-primary">Sign up with Google</button>
+                    </div>
+                </div>
+                <div class="col-md-6 d-none d-md-block">
+                    <p class="d-flex ml-auto">Already have an account? <span class="text-primary"> Sign In</span></p>
+                    <img class="img-fluid" src="https://i.ibb.co/TYrkQd1/ffffrrrr-2.png" />
+                    <p class="d-flex ml-auto">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="javascript/script.js"></script> 
+
+</body>
+
+</html>
