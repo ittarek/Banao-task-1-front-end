@@ -1,20 +1,14 @@
-async function injectHTML(filePath, elem) {
-  try {
-    const response = await fetch(filePath);
-    if (!response.ok) {
-      return;
-    }
-    const text = await response.text();
-    elem.innerHTML = text;
-  } catch (err) {
-    console.error(err.message);
-  }
+//  JavaScript code here
+document
+  .getElementById("openModalButton")
+  .addEventListener("click", function () {
+    openModal();
+  });
+
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
 }
 
-injectHTML("/header/header.html", document.querySelector(".header"));
-
-injectHTML("banner/banner.html", document.querySelector(".banner"));
-
-injectHTML("news/news.html", document.querySelector(".news"));
-
-injectHTML("./footer.html", document.querySelector(".footer"));
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
